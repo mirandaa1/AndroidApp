@@ -16,7 +16,7 @@ public class Register_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_);
 
-        TextView btn=findViewById(R.id.textViewSignUp);
+        TextView btn=findViewById(R.id.alreadyHaveAccount);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
