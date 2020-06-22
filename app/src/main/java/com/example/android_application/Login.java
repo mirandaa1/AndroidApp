@@ -40,6 +40,7 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Successfully Login",Toast.LENGTH_SHORT).show();
                 else
                     Toast.makeText(getApplicationContext(),"Wrong username or password",Toast.LENGTH_SHORT).show();
+
             }
         });
 
