@@ -55,7 +55,7 @@ public class Register_Activity extends AppCompatActivity {
                         else {
                             Toast.makeText(getApplicationContext(),"Email already exists",Toast.LENGTH_SHORT).show();;
                         }
-                    }
+                    }else
                     Toast.makeText(getApplicationContext(),"Password do not match",Toast.LENGTH_SHORT).show();
                 }
 

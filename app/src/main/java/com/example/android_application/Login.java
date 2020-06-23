@@ -36,8 +36,10 @@ public class Login extends AppCompatActivity {
                 String username = e1.getText().toString();
                 String password = e2.getText().toString();
                 Boolean Chkuserpass = db.usernamepassword(username,password);
-                if(Chkuserpass == true)
-                    Toast.makeText(getApplicationContext(),"Successfully Login",Toast.LENGTH_SHORT).show();
+                if(Chkuserpass == true) {
+                    Toast.makeText(getApplicationContext(), "Successfully Login", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Login.this, FirstPage.class));
+                }
                 else
                     Toast.makeText(getApplicationContext(),"Wrong username or password",Toast.LENGTH_SHORT).show();
 
