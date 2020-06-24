@@ -15,7 +15,7 @@ public class Register_Activity extends AppCompatActivity {
     DatabaseHelper db;
 
     EditText e1,e2,e3,e4;
-    Button b1,b2;
+    Button b1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,18 +44,19 @@ public class Register_Activity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Fields are empty",Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    if(s2.equals(s3)){
+                    if (s2.equals(s3)) {
                         Boolean chkemail = db.chkemail(s1);
-                        if(chkemail==true){
-                            Boolean insert = db.insert(s4,s1,s2);
-                            if(insert==true){
-                                Toast.makeText(getApplicationContext(),"Registered Successfully",Toast.LENGTH_SHORT).show();
+                        if (chkemail == true) {
+                            Boolean insert = db.insert(s4, s1, s2);
+                            if (insert == true) {
+                                Toast.makeText(getApplicationContext(), "Registered Successfully", Toast.LENGTH_SHORT).show();
                             }
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Email already exists", Toast.LENGTH_SHORT).show();
                         }
-                        else {
-                            Toast.makeText(getApplicationContext(),"Email already exists",Toast.LENGTH_SHORT).show();;
-                        }
+
                     }else
+
                     Toast.makeText(getApplicationContext(),"Password do not match",Toast.LENGTH_SHORT).show();
                 }
 
