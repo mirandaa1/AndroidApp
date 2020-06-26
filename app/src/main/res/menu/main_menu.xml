@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/ic_books"
+            android:title="Books" />
+        <item
+            android:id="@+id/nav_authors"
+            android:icon="@drawable/ic_email"
+            android:title="Authors" />
+
+        <item
+            android:id="@+id/nav_top20"
+            android:icon="@drawable/ic_top20"
+            android:title="Top 20 Books" />
+
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile_icon"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="Logout" />
+            </group>
+
+        </menu>
+
+
+    </item>
+
+
+    <item android:title="Comunicate ">
+
+        <menu>
+            <item
+                android:id="@+id/nav_cmail"
+                android:icon="@drawable/ic_cmail"
+                android:title="Mail Contact" />
+            <item
+                android:id="@+id/nav_us"
+                android:icon="@drawable/about_us"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>
