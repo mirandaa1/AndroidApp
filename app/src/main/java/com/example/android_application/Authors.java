@@ -3,6 +3,7 @@ package com.example.android_application;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,10 +14,15 @@ public class Authors extends AppCompatActivity {
     Button click;
     public static TextView data;
 
+
+public class Authors extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authors);
+
         click=(Button)findViewById(R.id.SeeAuthors);
         data=(TextView)findViewById(R.id.fetcheddata);
 
@@ -27,5 +33,7 @@ public class Authors extends AppCompatActivity {
                 process.execute();
             }
         });
+
+
     }
 }

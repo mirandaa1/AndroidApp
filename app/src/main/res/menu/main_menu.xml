@@ -8,7 +8,7 @@
             android:title="Books" />
         <item
             android:id="@+id/nav_authors"
-            android:icon="@drawable/ic_email"
+            android:icon="@drawable/ic_authors"
             android:title="Authors" />
 
         <item
