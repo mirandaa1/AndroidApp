@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Authors"></activity>
+
+        <activity android:name=".SecondActivity" /> 
+
         <activity android:name=".Books" />
         <activity android:name=".HomePage" />
         <activity android:name=".Login">
@@ -20,11 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register_Activity" />
-        <activity android:name=".MainActivity" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

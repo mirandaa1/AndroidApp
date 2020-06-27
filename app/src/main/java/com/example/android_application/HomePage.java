@@ -58,8 +58,16 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
             super.onBackPressed();
         }
 
+        else
+        { super.onBackPressed();
+        }
+
+}
+
+
 
     }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -72,8 +80,12 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
 
                 break;
             case R.id.nav_authors:
+
+               
+
                Intent intent = new Intent(HomePage.this,Authors.class);
                startActivity(intent);
+
                 break;
             case R.id.nav_us:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
