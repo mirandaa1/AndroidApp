@@ -66,20 +66,21 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         switch (menuItem.getItemId()) {
 
             case R.id.nav_books:
-                Intent intent1 = new Intent(HomePage.this,Books.class);
+                Intent intent1 = new Intent(HomePage.this, Books.class);
                 startActivity(intent1);
 
 
                 break;
             case R.id.nav_authors:
-               Intent intent = new Intent(HomePage.this,Authors.class);
-               startActivity(intent);
+                Intent intent = new Intent(HomePage.this, Authors.class);
+                startActivity(intent);
                 break;
             case R.id.nav_us:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
                 break;
         }
-        drawerLayout.closeDrawer(GravityCompat.START);
+            drawerLayout.closeDrawer(GravityCompat.START);
+
 
 
         return true;
