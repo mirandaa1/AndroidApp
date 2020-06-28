@@ -15,21 +15,19 @@ public class Authors extends AppCompatActivity {
     public static TextView data;
 
 
-public class Authors extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authors);
 
-        click=(Button)findViewById(R.id.SeeAuthors);
-        data=(TextView)findViewById(R.id.fetcheddata);
+        click = (Button) findViewById(R.id.SeeAuthors);
+        data = (TextView) findViewById(R.id.fetcheddata);
 
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fetchData process= new fetchData();
+                fetchData process = new fetchData();
                 process.execute();
             }
         });
