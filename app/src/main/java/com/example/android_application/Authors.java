@@ -15,9 +15,6 @@ public class Authors extends AppCompatActivity {
     public static TextView data;
 
 
-public class Authors extends AppCompatActivity {
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
