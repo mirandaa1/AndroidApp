@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -20,6 +21,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    Fragment fragment = null;
 
 
     @Override
@@ -70,13 +72,18 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 startActivity(intent);
                 break;
 
+            case R.id.nav_top20:
+                Intent intent2 = new Intent(HomePage.this, MultipleFragments.class);
+                startActivity(intent2);
+                break;
+
 
             case R.id.nav_authors:
                 Intent intent1 = new Intent(HomePage.this, Authors.class);
                 startActivity(intent1);
                 break;
             case R.id.nav_us:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+
                 break;
 
 
