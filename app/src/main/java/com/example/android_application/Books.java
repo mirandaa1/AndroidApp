@@ -23,7 +23,8 @@ public class Books extends AppCompatActivity {
         setContentView(R.layout.activity_books);
         pdfListView = findViewById(R.id.myPDFList);
 
-        String[] pdfFiles = {"Hacking for Dummies", "Professional Android", "Python Programming"};
+        String[] pdfFiles = {"Professional Android","Begining AngularJS","Hacking for Dummies", "Eat,Pray,Love", "Python Programming","Medical Microbiology","How learning works","Java Programming",
+        "Mindset","Quran English","Think Python","Yoga Anatomy","Higher Engineering Mathematics","The Art of Public Speaking"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, pdfFiles) {
 

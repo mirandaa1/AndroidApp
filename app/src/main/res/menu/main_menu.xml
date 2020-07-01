@@ -12,9 +12,10 @@
             android:title="Authors" />
 
         <item
-            android:id="@+id/nav_top20"
+            android:id="@+id/nav_top5"
             android:icon="@drawable/ic_top20"
-            android:title="Top 20 Books" />
+
+          
         <item
             android:id="@+id/nav_notes"
             android:icon="@drawable/ic_books"
@@ -27,6 +28,9 @@
             android:id="@+id/nav_logout"
             android:icon="@drawable/logout_icon"
             android:title="Logout" />
+
+            android:title="Top5 Books" />
+
 
     </group>
 
