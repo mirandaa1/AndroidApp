@@ -33,8 +33,8 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         setSupportActionBar(toolbar);
 
         Menu menu = navigationView.getMenu();
-        menu.findItem(R.id.nav_logout).setVisible(false);
-        menu.findItem(R.id.nav_profile).setVisible(false);
+        menu.findItem(R.id.nav_logout).setVisible(true);
+
 
         navigationView.bringToFront();
 
@@ -71,6 +71,18 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
             case R.id.nav_authors:
                 Intent intent1 = new Intent(HomePage.this, Authors.class);
                 startActivity(intent1);
+                break;
+            case R.id.nav_notes:
+                Intent intent2 = new Intent(HomePage.this, Notes.class);
+                startActivity(intent2);
+                break;
+            case R.id.nav_prof:
+                Intent intent3 = new Intent(HomePage.this, Profile.class);
+                startActivity(intent3);
+                break;
+            case R.id.nav_logout:
+                Intent intent4 = new Intent(HomePage.this, Login.class);
+                startActivity(intent4);
                 break;
 
             case R.id.nav_us:

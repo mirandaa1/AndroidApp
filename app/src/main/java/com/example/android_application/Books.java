@@ -21,7 +21,7 @@ public class Books extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_books);
-        pdfListView = (ListView) findViewById(R.id.myPDFList);
+        pdfListView = findViewById(R.id.myPDFList);
 
         String[] pdfFiles = {"Hacking for Dummies", "Professional Android", "Python Programming"};
 
