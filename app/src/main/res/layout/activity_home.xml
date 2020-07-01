@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_home"
+    android:background="@drawable/bg_home1"
     tools:context=".HomePage"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
@@ -36,6 +36,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             app:navigationIcon="@drawable/menu2" />
+
 
     </ScrollView>
 
