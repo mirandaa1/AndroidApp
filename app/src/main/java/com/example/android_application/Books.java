@@ -21,7 +21,7 @@ public class Books extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_books);
-        pdfListView = (ListView) findViewById(R.id.myPDFList);
+        pdfListView = findViewById(R.id.myPDFList);
 
         String[] pdfFiles = {"Professional Android","Begining AngularJS","Hacking for Dummies", "Eat,Pray,Love", "Python Programming","Medical Microbiology","How learning works","Java Programming",
         "Mindset","Quran English","Think Python","Yoga Anatomy","Higher Engineering Mathematics","The Art of Public Speaking"};
