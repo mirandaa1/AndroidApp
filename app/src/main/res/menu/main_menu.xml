@@ -12,9 +12,9 @@
             android:title="Authors" />
 
         <item
-            android:id="@+id/nav_top20"
+            android:id="@+id/nav_top5"
             android:icon="@drawable/ic_top20"
-            android:title="Top 20 Books" />
+            android:title="Top5 Books" />
 
     </group>
 

@@ -1,9 +1,15 @@
 package com.example.android_application;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 
+import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -33,5 +39,9 @@ public class Authors extends AppCompatActivity {
         });
 
 
+
+
     }
+
+
 }

@@ -29,7 +29,7 @@ public class MultipleFragments extends AppCompatActivity {
         fragmentManager.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
             public void onBackStackChanged() {
-                fragmentCounter.setText("Libri " + fragmentManager.getBackStackEntryCount());
+                fragmentCounter.setText("Top " + fragmentManager.getBackStackEntryCount() + " Book");
 
             }
         });
@@ -49,6 +49,9 @@ public class MultipleFragments extends AppCompatActivity {
         switch (fragmentManager.getBackStackEntryCount()){
             case 0:fragment = new FirstFragment();break;
             case 1:fragment = new SecondFragment();break;
+            case 2:fragment = new Fragment3();break;
+            case 3:fragment = new Fragment4();break;
+            case 4:fragment = new Fragment5();break;
 
 
         }

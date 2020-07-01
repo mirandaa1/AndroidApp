@@ -13,6 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -72,7 +73,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 startActivity(intent);
                 break;
 
-            case R.id.nav_top20:
+            case R.id.nav_top5:
                 Intent intent2 = new Intent(HomePage.this, MultipleFragments.class);
                 startActivity(intent2);
                 break;
@@ -81,9 +82,11 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
             case R.id.nav_authors:
                 Intent intent1 = new Intent(HomePage.this, Authors.class);
                 startActivity(intent1);
+
                 break;
             case R.id.nav_us:
-
+                Intent intent3 = new Intent(HomePage.this, AboutUs.class);
+                startActivity(intent3);
                 break;
 
 
