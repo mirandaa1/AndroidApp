@@ -14,31 +14,32 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class fetchData  extends AsyncTask<Void,Void,Void> {
-    String data="";
-    String dataParsed="";
-    String singleParsed="";
+public class fetchData extends AsyncTask<Void, Void, Void> {
+    String data = "";
+    String dataParsed = "";
+    String singleParsed = "";
+
     @Override
     protected Void doInBackground(Void... voids) {
         try {
             URL url = new URL("https://pastebin.com/raw/8pLisiBm");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-            InputStream inputStream=httpURLConnection.getInputStream();
+            InputStream inputStream = httpURLConnection.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-            String line="";
-            while (line!=null){
-                line=bufferedReader.readLine();
-                data=data+line;
+            String line = "";
+            while (line != null) {
+                line = bufferedReader.readLine();
+                data = data + line;
             }
-            JSONArray JA=new JSONArray(data);
-            for (int i=0;i<JA.length();i++){
-                JSONObject JO= (JSONObject) JA.get(i);
-                singleParsed = "Name: "+JO.get("name")+"\n"+
-                        "Profession: "+JO.get("profession")+"\n"+
-                        "Born :"+JO.get("born")+"\n"+
-                        "Nationality: "+JO.get("nationality")+"\n"+
-                        "Best known books :"+JO.get("books")+"\n";
-                dataParsed = dataParsed+singleParsed+"\n";
+            JSONArray JA = new JSONArray(data);
+            for (int i = 0; i < JA.length(); i++) {
+                JSONObject JO = (JSONObject) JA.get(i);
+                singleParsed = "Name: " + JO.get("name") + "\n" +
+                        "Profession: " + JO.get("profession") + "\n" +
+                        "Born :" + JO.get("born") + "\n" +
+                        "Nationality: " + JO.get("nationality") + "\n" +
+                        "Best known books :" + JO.get("books") + "\n";
+                dataParsed = dataParsed + singleParsed + "\n";
             }
 
         } catch (MalformedURLException e) {

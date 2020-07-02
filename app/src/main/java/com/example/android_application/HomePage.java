@@ -70,6 +70,11 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 startActivity(intent);
                 break;
 
+            case R.id.nav_lifestyle:
+                Intent intent9 = new Intent(HomePage.this, LifestyleBooks.class);
+                startActivity(intent9);
+                break;
+
             case R.id.nav_top5:
                 Intent intent2 = new Intent(HomePage.this, MultipleFragments.class);
                 startActivity(intent2);
@@ -88,8 +93,8 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
 
                 break;
             case R.id.nav_prof:
-                Intent intent6 = new Intent(HomePage.this, Profile.class);
-                startActivity(intent6);
+                Intent intent8 = new Intent(HomePage.this, Profile.class);
+                startActivity(intent8);
                 break;
             case R.id.nav_logout:
                 Intent intent4 = new Intent(HomePage.this, Login.class);

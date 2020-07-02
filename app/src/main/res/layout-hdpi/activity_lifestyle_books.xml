@@ -7,7 +7,7 @@
     tools:context=".LifestyleBooks">
 
     <ListView
-        android:id="@+id/myPDFList1"
+        android:id="@+id/myPDFList2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/foto3"
