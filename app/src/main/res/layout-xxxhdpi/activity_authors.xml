@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/book_old">
+    android:background="#B69B9B">>
     <Button
         android:id="@+id/SeeAuthors"
         android:layout_width="wrap_content"

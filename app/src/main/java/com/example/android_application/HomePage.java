@@ -82,12 +82,12 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
 
                 break;
             case R.id.nav_notes:
-                Intent intent2 = new Intent(HomePage.this, Notes.class);
-                startActivity(intent2);
+                Intent intent5 = new Intent(HomePage.this, Notes.class);
+                startActivity(intent5);
                 break;
             case R.id.nav_prof:
-                Intent intent3 = new Intent(HomePage.this, Profile.class);
-                startActivity(intent3);
+                Intent intent6 = new Intent(HomePage.this, Profile.class);
+                startActivity(intent6);
                 break;
             case R.id.nav_logout:
                 Intent intent4 = new Intent(HomePage.this, Login.class);
