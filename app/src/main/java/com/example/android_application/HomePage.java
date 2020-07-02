@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -13,7 +12,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -50,7 +48,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
-        navigationView.setCheckedItem(R.id.nav_books);
+        //navigationView.setCheckedItem(R.id.nav_books);
     }
 
     @Override
@@ -68,9 +66,15 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
 
-            case R.id.nav_books:
-                Intent intent = new Intent(HomePage.this, Books.class);
+            case R.id.nav_technology:
+                Intent intent = new Intent(HomePage.this, TechnologyBooks.class);
                 startActivity(intent);
+                break;
+
+
+            case R.id.nav_lifestyle:
+                Intent intent5 = new Intent(HomePage.this, LifestyleBooks.class);
+                startActivity(intent5);
                 break;
 
             case R.id.nav_top5:
@@ -88,6 +92,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 Intent intent3 = new Intent(HomePage.this, AboutUs.class);
                 startActivity(intent3);
                 break;
+
 
 
         }

@@ -2,10 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
 
-        <item
-            android:id="@+id/nav_books"
-            android:icon="@drawable/ic_books"
-            android:title="Books" />
+     <item android:title="Books">
+         <menu>
+             <item
+                 android:id="@+id/nav_technology"
+                 android:icon="@drawable/ic_books"
+                 android:title="Technology and Science"/>
+
+             <item
+                 android:id="@+id/nav_lifestyle"
+                 android:icon="@drawable/ic_books"
+                 android:title="Art and Lifestyle"/>
+
+         </menu>
+
+     </item>
+
         <item
             android:id="@+id/nav_authors"
             android:icon="@drawable/ic_authors"
@@ -14,7 +26,7 @@
         <item
             android:id="@+id/nav_top5"
             android:icon="@drawable/ic_top20"
-            android:title="Top5 Books" />
+            android:title="Top 5 Books" />
 
     </group>
 
