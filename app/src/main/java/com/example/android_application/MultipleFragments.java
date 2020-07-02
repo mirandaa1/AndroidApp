@@ -23,7 +23,7 @@ public class MultipleFragments extends AppCompatActivity {
         setContentView(R.layout.activity_multiple_fragments);
 
         btnView = findViewById(R.id.btnView);
-        fragmentCounter=findViewById(R.id.fragmentcounter);
+        fragmentCounter = findViewById(R.id.fragmentcounter);
 
         fragmentManager = getSupportFragmentManager();
         fragmentManager.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
@@ -44,20 +44,31 @@ public class MultipleFragments extends AppCompatActivity {
         });
 
     }
-    public void addFragment(){
 
-        switch (fragmentManager.getBackStackEntryCount()){
-            case 0:fragment = new FirstFragment();break;
-            case 1:fragment = new SecondFragment();break;
-            case 2:fragment = new Fragment3();break;
-            case 3:fragment = new Fragment4();break;
-            case 4:fragment = new Fragment5();break;
+    public void addFragment() {
+
+        switch (fragmentManager.getBackStackEntryCount()) {
+            case 0:
+                fragment = new FirstFragment();
+                break;
+            case 1:
+                fragment = new SecondFragment();
+                break;
+            case 2:
+                fragment = new Fragment3();
+                break;
+            case 3:
+                fragment = new Fragment4();
+                break;
+            case 4:
+                fragment = new Fragment5();
+                break;
 
 
         }
         fragmentManager = getSupportFragmentManager();
-        fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.add(R.id.container1,fragment).commit();
+        fragmentTransaction.add(R.id.container1, fragment).commit();
     }
 }

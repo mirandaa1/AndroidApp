@@ -25,12 +25,11 @@ public class AboutUs extends AppCompatActivity {
 
         View view = findViewById(R.id.aboutus);
 
-        snackbar = Snackbar.make(view,"© All Rights Reserved",Snackbar.LENGTH_SHORT);
+        snackbar = Snackbar.make(view, "© All Rights Reserved", Snackbar.LENGTH_SHORT);
         snackbar.setDuration(5000);
         snackbar.show();
 
     }
-
 
 
 }
