@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -12,6 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -34,21 +36,18 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         Menu menu = navigationView.getMenu();
-        menu.findItem(R.id.nav_logout).setVisible(false);
-        menu.findItem(R.id.nav_profile).setVisible(false);
+        menu.findItem(R.id.nav_logout).setVisible(true);
+
 
         navigationView.bringToFront();
-
 
         // select toolbar as our actionbar
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
         navigationView.setNavigationItemSelectedListener(this);
-        //navigationView.setCheckedItem(R.id.nav_books);
+        navigationView.setCheckedItem(R.id.nav_technology);
     }
 
     @Override
@@ -71,12 +70,6 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 startActivity(intent);
                 break;
 
-
-            case R.id.nav_lifestyle:
-                Intent intent5 = new Intent(HomePage.this, LifestyleBooks.class);
-                startActivity(intent5);
-                break;
-
             case R.id.nav_top5:
                 Intent intent2 = new Intent(HomePage.this, MultipleFragments.class);
                 startActivity(intent2);
@@ -88,17 +81,27 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 startActivity(intent1);
 
                 break;
-            case R.id.nav_us:
-                Intent intent3 = new Intent(HomePage.this, AboutUs.class);
+            case R.id.nav_notes:
+                Intent intent6 = new Intent(HomePage.this, Notes.class);
+                startActivity(intent6);
+                break;
+            case R.id.nav_prof:
+                Intent intent3 = new Intent(HomePage.this, Profile.class);
                 startActivity(intent3);
                 break;
+            case R.id.nav_logout:
+                Intent intent4 = new Intent(HomePage.this, Login.class);
+                startActivity(intent4);
+                break;
 
+            case R.id.nav_us:
+                Intent intent7 = new Intent(HomePage.this, AboutUs.class);
+                startActivity(intent7);
+                break;
 
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);
-
-
         return true;
     }
 }
