@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login"
-    android:background="@drawable/b_login">
+    android:background="@drawable/foto5">
 
 
     <EditText
@@ -127,6 +127,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="SignUp?"
-            android:textColor="@color/colorRed" />
+            android:textColor="@android:color/holo_orange_light" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,6 @@ package com.example.android_application;
 
 import android.os.Bundle;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.barteksc.pdfviewer.PDFView;
@@ -19,68 +18,86 @@ public class PDFOpener extends AppCompatActivity {
         String getItem = getIntent().getStringExtra("pdfFileName");
 
 
-
         assert getItem != null;
-        if(getItem.equals("Professional Android")){
+        if (getItem.equals("Professional Android")) {
 
             myPDFViewer.fromAsset("Professional Android.pdf").load();
         }
-        if(getItem.equals("Begining AngularJS")){
+        if (getItem.equals("Begining AngularJS")) {
 
             myPDFViewer.fromAsset("Begining AngularJS.pdf").load();
         }
+        if (getItem.equals("Probability and Statistics")) {
 
-        if(getItem.equals("Hacking for Dummies")){
+            myPDFViewer.fromAsset("Probability and Statistics.pdf").load();
+
+        }
+        if (getItem.equals("Space, Time and Einstein")) {
+
+            myPDFViewer.fromAsset("Space, Time and Einstein.pdf").load();
+
+        }
+        if (getItem.equals("Hacking for Dummies")) {
 
             myPDFViewer.fromAsset("Hacking_Book.pdf").load();
         }
-        if(getItem.equals("Eat,Pray,Love")){
+        if (getItem.equals("Cosmology")) {
 
-            myPDFViewer.fromAsset("Eat,Love,Pray.pdf").load();
+            myPDFViewer.fromAsset("Cosmology.pdf").load();
         }
-        if(getItem.equals("Python Programming")){
+        if (getItem.equals("Data Analysis")) {
+
+            myPDFViewer.fromAsset("Data Analysis.pdf").load();
+        }
+        if (getItem.equals("Python Programming")) {
 
             myPDFViewer.fromAsset("Python_Book.pdf").load();
         }
-        if(getItem.equals("Medical Microbiology")){
+        if (getItem.equals("Internet - Encyclopedia")) {
 
-            myPDFViewer.fromAsset("Medical Microbiology.pdf").load();
+            myPDFViewer.fromAsset("Internet - encyclopedia").load();
         }
-        if(getItem.equals("How learning works")){
+        if (getItem.equals("Social Media Marketing")) {
 
-            myPDFViewer.fromAsset("How Learning Works.pdf").load();
+            myPDFViewer.fromAsset("Social Media Marketing.pdf").load();
         }
-        if(getItem.equals("Java Programming")){
+        if (getItem.equals("Java Programming")) {
 
             myPDFViewer.fromAsset("Java Programming.pdf").load();
         }
-        if(getItem.equals("Mindset")){
+        if (getItem.equals("Higher Engineering Mathematics")) {
 
-            myPDFViewer.fromAsset("Mindset.pdf").load();
+            myPDFViewer.fromAsset("Higher Engineering Mathematics.pdf").load();
+
+        }
+        if (getItem.equals("Galactic Astronomy")) {
+
+            myPDFViewer.fromAsset("Galactic Astronomy.pdf").load();
         }
 
-        if(getItem.equals("Quran English")){
+        if (getItem.equals("Software Engineering")) {
 
-            myPDFViewer.fromAsset("Quran - English.pdf").load();
+            myPDFViewer.fromAsset("Software Engineering.pdf").load();
         }
-        if(getItem.equals("Think Python")){
+        if (getItem.equals("Molecular Biology")) {
+
+            myPDFViewer.fromAsset("Molecular Biology.pdf").load();
+
+        }
+        if (getItem.equals("Organic Chemistry")) {
+
+            myPDFViewer.fromAsset("Organic Chemistry.pdf").load();
+
+        }
+        if (getItem.equals("Think Python")) {
 
             myPDFViewer.fromAsset("Think Python.pdf").load();
         }
-        if(getItem.equals("Yoga Anatomy")){
+        if (getItem.equals("Mathematical Physics")) {
 
-            myPDFViewer.fromAsset("Yoga Anatomy.pdf").load();
+            myPDFViewer.fromAsset("Mathematical Physics.pdf").load();
+
         }
-        if(getItem.equals("Higher Engineering Mathematics")){
-
-            myPDFViewer.fromAsset("Higher Engineering Mathematics.pdf").load();
-        }
-        if(getItem.equals("The Art of Public Speaking")){
-
-            myPDFViewer.fromAsset("The Art of Public Speaking.pdf").load();
-        }
-
-
 
 
     }

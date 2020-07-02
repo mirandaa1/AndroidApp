@@ -24,6 +24,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
     Toolbar toolbar;
     Fragment fragment = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +47,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
-        navigationView.setCheckedItem(R.id.nav_books);
+        navigationView.setCheckedItem(R.id.nav_technology);
     }
 
     @Override
@@ -57,16 +58,15 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
             super.onBackPressed();
         }
 
-    }
 
+    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
 
-            case R.id.nav_books:
-
-                Intent intent = new Intent(HomePage.this, Books.class);
+            case R.id.nav_technology:
+                Intent intent = new Intent(HomePage.this, TechnologyBooks.class);
                 startActivity(intent);
                 break;
 
@@ -82,8 +82,10 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
 
                 break;
             case R.id.nav_notes:
-                Intent intent5 = new Intent(HomePage.this, Notes.class);
-                startActivity(intent5);
+
+                Intent intent6 = new Intent(HomePage.this, Notes.class);
+                startActivity(intent6);
+
                 break;
             case R.id.nav_prof:
                 Intent intent6 = new Intent(HomePage.this, Profile.class);
@@ -95,8 +97,8 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 break;
 
             case R.id.nav_us:
-                Intent intent3 = new Intent(HomePage.this, AboutUs.class);
-                startActivity(intent3);
+                Intent intent7 = new Intent(HomePage.this, AboutUs.class);
+                startActivity(intent7);
                 break;
 
 
