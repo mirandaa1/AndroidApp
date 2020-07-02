@@ -20,7 +20,7 @@ public class LifestyleBooks extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_politics_books);
+        setContentView(R.layout.activity_lifestyle_books);
         pdfListView2 = (ListView) findViewById(R.id.myPDFList2);
 
         String[] pdfFiles2 = {"Anxiety & Depression", "Cognitive Psychology", "Complete Yoga Poses", "Food",

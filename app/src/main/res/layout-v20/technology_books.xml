@@ -9,7 +9,9 @@
         android:id="@+id/myPDFList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/foto1"
+        android:background="@drawable/foto4"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="@dimen/about_description_text_size"
         android:headerDividersEnabled="?android:attr/windowSwipeToDismiss"
         android:padding="5dp">
 

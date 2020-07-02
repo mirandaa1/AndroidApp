@@ -5,10 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LifestyleBooks">
+
     <ListView
-        android:id="@+id/myPDFList2"
+        android:id="@+id/myPDFList1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/foto3"
+        android:dividerHeight="@dimen/about_description_text_size"
         android:padding="5dp">
 
     </ListView>
